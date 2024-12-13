@@ -1,0 +1,22 @@
+.taskbox{
+  display: flex;
+  gap: 14px;
+  text-align: left;
+  justify-content: space-between;
+  width: 60%;
+}
+button{
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: green;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  width: 98px;
+  color: white;
+}
+.taskbox :nth-child(3){
+  background-color: red;
+  
+}
