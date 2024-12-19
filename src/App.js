@@ -17,20 +17,22 @@ function App() {
   }
   return (
     <div className="app">
-      <h1>Todo</h1>
+     
       <div className='todobox'>
+        <h1>Todo</h1>
         <div className='todoitem'>
         <input type='text' value={todo} onChange={handleTodo} placeholder='Add your task here'/>
         <button onClick={handlesubmit} className="submitbtn">Submit</button>
         </div>
-      
+      <div className='container'>
       {
         TodoList.map((item,index)=>{
           return(
-            <Todo todo={item} todoList={TodoList} setTodoList={setTodoList} key={index}/>
+            <Todo todo={item} todoList={TodoList} setTodoList={setTodoList} key={index} />
           )
         })
       }
+      </div>
        </div>
       </div>
   );

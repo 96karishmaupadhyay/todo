@@ -7,46 +7,57 @@
 .app{
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  background-size: cover;
   height: 100vh;
-  padding:14px;
+  background: linear-gradient(45deg,rgb(200, 214, 91),rgb(103, 238, 91));
 }
 .todobox{
-  width: 60%;
+  height: 132px;
+  width: 400px;
+  border: none;
   display: flex;
-  margin: 8px;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 4px;
   
- 
+
 }
 .todoitem{
-  width: 60%;
   display: flex;
- justify-content: space-between;
+  gap: 10px;
   
 }
-input{
+.todoitem input{
   height: 40px;
-  border-radius:15px;
-  padding: 20px;
+  width: auto;
+  padding-left: 8px;
+  border-radius: 8px;
   border: none;
-  font-size: 18px;
-  outline: goldenrod double
-
-
+  outline: 1px inset red;
 }
 
-.submitbtn{
+.todoitem button{
   height: 40px;
-  border: none;
-  border-radius: 15px;
   width: 98px;
+  background-color: rgb(51, 111, 222);
+  border: none;
+  color: white;
+  border-radius: 8px;
   font-size: 18px;
-  background-color: orange;
-  color: maroon;
-  font-weight: 400;
- cursor: pointer;
+}
+.todoitem button:hover{
+  background-color: blue;
+  outline: 1px inset rgb(240, 229, 229);
+}
+
+.container{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 600px;
+  padding-top: 40px;
 }

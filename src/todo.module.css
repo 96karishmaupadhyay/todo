@@ -1,22 +1,38 @@
+
 .taskbox{
   display: flex;
-  gap: 14px;
-  text-align: left;
-  justify-content: space-between;
-  width: 60%;
-}
-button{
-  color: white;
-  font-size: 18px;
-  font-weight: 300;
-  background-color: green;
-  height: 40px;
-  border: none;
-  border-radius: 15px;
-  width: 98px;
-  color: white;
-}
-.taskbox :nth-child(3){
-  background-color: red;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
   
+
+}
+.taskbox :nth-child(1){
+  flex: 50%;
+}
+.taskbox button{
+  height: 40px;
+  width: 98px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.taskbox input{
+  height: 40px;
+  width: auto;
+  padding-left: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px inset red;
+}
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+}
+.taskbox h2{
+  overflow: hidden;
+  white-space: nowrap;
 }
